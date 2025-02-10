@@ -15,12 +15,13 @@ console.log(age);
 const ticket_price = 0.21 * km;
 const underage_ticket =  (ticket_price / 100) * 20;
 const adult_ticket = (ticket_price / 100) * 40;
-
+const underage_price = ticket_price - underage_ticket;
+const adult_price = ticket_price - adult_ticket;
 
 if (age < 18) {
-    console.log(underage_ticket);
+    console.log(underage_price);
 } else if (age > 65) {
-    console.log(adult_ticket);
+    console.log(adult_price);
 } else {
     console.log(ticket_price);
 }
