@@ -12,12 +12,15 @@ const age = parseInt(prompt("Quanti anni hai?"));
 console.log(age);
 
 
-let ticket_price = 0.21 * km;
+const ticket_price = 0.21 * km;
+const underage_ticket =  (ticket_price / 100) * 20;
+const adult_ticket = (ticket_price / 100) * 40;
+
 
 if (age < 18) {
-    (ticket_price / 20) * 100;
+    console.log(underage_ticket);
 } else if (age > 65) {
-    (ticket_price / 40) * 100;
-} 
-
-console.log(ticket_price);
+    console.log(adult_ticket);
+} else {
+    console.log(ticket_price);
+}
